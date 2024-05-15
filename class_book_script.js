@@ -7,7 +7,11 @@ const wide_sea = new Book(
   "Hampton Sides",
   "Micheal Joseph UK",
   "April 11, 2024",
+  "Autobiography",
+  "Paperback",
   "9780241437377",
+  40.00,
+  "NZD"
 );
 
 const bob_dylan = new Book(
@@ -15,7 +19,11 @@ const bob_dylan = new Book(
   "Mark Davidson",
   "Callaway Editions, U.S",
   "October 25, 2023",
+  "Music",
+  "Hardback",
   "9781734537796",
+  175.00,
+  "NZD"
 );
 
 const flame_shadow = new Book(
@@ -23,15 +31,23 @@ const flame_shadow = new Book(
   "Sarah J. Mass",
   "Bloomsbury Publishing PLC",
   "January 30, 2024",
+  "Fantasy",
+  "Hardback",
   "9781408884447",
+  50.00,
+  "NZD"
 );
 
 const birding = new Book(
   "Birding",
   "Rose Ruane",
-  "Corsair/COnstable & Robin",
+  "Corsair/Constable & Robin",
   "May 2 2024",
+  "Fiction",
+  "Paperback",
   "9781472159182",
+  37.99,
+  "NZD"
 )
 
 // Add books to the console
@@ -93,7 +109,10 @@ books.forEach((book) => {
         <li><strong>Author:</strong> ${book.author}</li>
         <li><strong>Publisher:</strong> ${book.publisher}</li>
         <li><strong>Date:</strong> ${book.date}</li>
+        <li><strong>Category:</strong> ${book.category}</li>
+        <li><strong>Format:</strong> ${book.format}</li>
         <li><strong>ISBN:</strong> ${book.ISBN}</li>
+        <li><strong>Price:</strong> $${book.price} ${book.currency}</li>
       </ul>
   `;
   main.appendChild(bookDiv);
