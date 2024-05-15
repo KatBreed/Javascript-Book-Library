@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    background: greenyellow;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}*/
