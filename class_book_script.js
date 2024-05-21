@@ -104,7 +104,7 @@ books.forEach((book) => {
   bookDiv.style.gridColumn = '2 / 3';
   bookDiv.style.gridRow = row.toString();
   bookDiv.innerHTML = `
-    <h2><strong>Title:</strong> ${book.title}</h2>
+    <h2>${book.title}</h2>
       <ul>
         <li><strong>Author:</strong> ${book.author}</li>
         <li><strong>Publisher:</strong> ${book.publisher}</li>
